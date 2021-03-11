@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+
+.show-btn {
+  margin-top: 50px;
+  height: 40px;
+
+  width: 15em;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1em;
+  background: orangered;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+p {
+  font-size: medium;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+
+header {
+  font-family: "Koho", sans-serif;
+}

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Koho", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+p {
+  font-size: medium;
+}
+
+.text1 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 p {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 1000;
+}
+
+.text1 h2 {
+  color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pexels-pixabay-276385.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.book_btn {
+  font-size: 1em;
+  background: orangered;
+  border-radius: 2em;
+  padding: 0.2em 2em;
+  border: none;
+  color: #fff;
+  font-size: smaller;
+  margin-top: 2em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.book_btn:hover {
+  opacity: 1;
+}
+
+.booking-btn {
+  background-color: black;
+  background: orangered;
+  cursor: pointer;
+  border: none;
+  height: 2em;
+  width: 10em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  border-radius: 0.7em;
+  box-shadow: black;
+  opacity: 0.7;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.booking-btn:hover {
+  opacity: 1;
+}
+
+.booking-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/*cards*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+a.box {
+  color: #fff;
+  background-color: #2f9b9b;
+  display: block;
+  width: 24em;
+  height: 27em;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  font-family: "monsterrat", sans-serif;
+}
+
+.box h2 {
+  text-transform: uppercase;
+ 
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 0 4em;
+  z-index: 2;
+  height: 3em;
+  transition: all 0.2s ease;
+}
+
+a:hover .content {
+  height: 8em;
+  transition: all 0.2s ease;
+}
+
+.box p {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  margin: 5px;
+  line-height: 1.5em;
+  font-weight: bolder;
+}
+
+a:hover p {
+  height: 3em;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}
+
+.link {
+  height: 1.5em;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+  display: block;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+a:hover .link {
+  transition: all 0.2s ease;
+}
+
+main {
+  margin: auto;
+}
+
+.card_box {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10em;
+}
+
+.card {
+  border: solid;
+  margin: 20px;
+  background-color: black;
+}
+
+.box img {
+  width: 24em;
+  height: 27em;
+}
+
+.box img:hover {
+  opacity: 0.5;
+}
+
+@-webkit-keyframes booking-btn {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes booking-btn {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.booking-btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.booking-btn:hover,
+.booking-btn:focus,
+.booking-btn:active {
+  -webkit-animation-name: booking-btn;
+  animation-name: booking-btn;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}

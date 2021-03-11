@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/delete.css">
+    <title>show/delete</title>
+  </head>
+  <body>
+
+    <header>
+      <h2>Mountain.Lux</h2>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link">
+          <h2><a href="/listing.html">Resorts</a></h2>
+        </li>
+        
+        <li class="nav-link">
+          <h2><a href="/about.html">About Us</a></h2>
+        </li>
+        <li class="nav-link">
+          <h2><a onclick="logout()">Sign out</a></h2>
+        </li>
+      </ul>
+    </header>
+ 
+    <table>
+      <table role="table">
+        <thead role="rowgroup">
+          <tr role="row">
+            <th role="columnheader">Hotel ID</th>
+            <th role="columnheader">Hotel Name</th>
+            <th role="columnheader">Description</th>
+            <th role="columnheader">Image 1</th>
+            <th role="columnheader">Image 2</th>
+            <th role="columnheader">Image 3</th>
+            <th role="columnheader">Price</th>
+            <th role="columnheader">Stars</th>
+         
+            <th role="columnheader">Delete</th>
+          </tr>
+        </thead>
+
+        <tbody role="rowgroup" id="data-items">
+
+        </tbody>
+        
+        
+       
+    
+    </table>
+    <div class="buttons">
+     <a href="http://127.0.0.1:5000/view"
+        > <button class="show-btn">Show Raw Data</button></a>     
+        <a href="uploadListing.html"
+        > <button class="show-btn">Back to upload</button></a> 
+        <a href="/listing.html"
+        > <button class="show-btn">View Resorts</button></a> 
+
+    </div>
+
+     
+   
+      
+    <footer>
+      <h2>copyright © TAMSYN STEED 2021</h2>
+    </footer>
+  
+    <script src="/assets/scripts/delete.js"></script>
+    <script src="/assets/scripts/signin.js"></script>
+  </body>
+</html>

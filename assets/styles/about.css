@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Koho", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+main {
+  position: relative;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 4em 0;
+  display: block;
+}
+
+button {
+  font-size: 1em;
+  background: orangered;
+  border-radius: 2em;
+  padding: 0.2em 2em;
+  border: none;
+  color: #fff;
+  font-size: smaller;
+  margin-top: 2em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+p {
+  font-size: medium;
+}
+
+.text1 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 p {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 1000;
+}
+
+.text1 h2 {
+  color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pexels-pixabay-276385.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about {
+  grid-area: left;
+}
+.times {
+  grid-area: top;
+}
+.contact {
+  grid-area: bottom;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "left top"
+    "left bottom";
+  grid-gap: 10px;
+
+  padding: 10px;
+
+  /* width: 50em; */
+  margin: 0 auto;
+  border: solid;
+
+  padding-bottom: 40px;
+}
+
+.about-border {
+  position: relative;
+
+  /* left: 32%; */
+  /* margin-left: -32px; */
+  /* top: 50%; */
+  width: 50em;
+  max-width: 100%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  margin-top: -20px; /*creates overlapping*/
+  padding: 1%;
+}
+
+.times {
+  border-bottom: solid;
+  border-color: grey;
+}
+
+.about {
+}
+
+.contact {
+}
+
+.contact p {
+  text-align: left;
+  padding-left: 10px;
+}
+
+table {
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 0.5em;
+}
+
+table td {
+  padding-right: 15px;
+}
+
+@media (max-width: 1400px) {
+  .about_container {
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    max-width: 100%;
+    max-height: 100%;
+
+    margin-top: 10px;
+    z-index: 0;
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_container {
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    max-width: 100%;
+    min-height: 100%;
+
+    margin-top: 10px;
+    z-index: 0;
+    padding-bottom: 2em;
+  }
+}
+
+@media (max-width: 522px) {
+  .about_container {
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    max-width: 100%;
+    min-height: 90%;
+
+    margin-top: 10px;
+    z-index: 0;
+    padding-bottom: 2em;
+  }
+  button {
+    margin-top: 2px;
+    padding: 0.2em 0.3em;
+    font-size: smaller;
+  }
+  .text1 p {
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    margin-top: 2px;
+  }
+
+  .text1 h2 {
+    margin-bottom: 2px;
+  }
+}

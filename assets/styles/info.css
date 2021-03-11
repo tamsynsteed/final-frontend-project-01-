@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Koho", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+  overflow-x: hidden;
+}
+
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 100vw;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+p {
+  font-size: medium;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: whitesmoke;
+  color: grey;
+  min-width: 200px;
+  text-align: left;
+  font-size: larger;
+}
+
+.fa,
+.far,
+.fas {
+  font-weight: 900;
+  color: black;
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+}
+
+.label {
+  width: 60%;
+  padding: 10px;
+  outline: none;
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: orangered;
+  opacity: 1;
+  color: white;
+}
+
+.sign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form {
+  padding: 30px;
+  background-color: whitesmoke;
+}
+/* Set a style for the submit button */
+.btn {
+  background: orangered;
+  border-radius: 2em;
+
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-top: 5em;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 1;
+}

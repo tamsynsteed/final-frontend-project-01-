@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Sign in</title>
+  </head>
+  <body>
+    <header>
+      <h2>Mountain.Lux</h2>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link">
+          <h2><a href="/about1.html">About Us</a></h2>
+        </li>
+      </ul>
+    </header>
+
+    <landing class="landing" style="display: block; height: 45vh">
+      <div class="container">
+        <div class="image">
+          <img
+            src="./assets/images/pexels-micah-boerma-1008739.jpg"
+            style="width: 80%; height: 45vh"
+          />
+        </div>
+        <div class="text1">
+          <h2>Find your dream luxury mountain villa</h2>
+          <p>Find the perfect luxury villa deep within the woods</p>
+        </div>
+      </div>
+    </landing>
+
+    <main class="main" style="display: block">
+      <div class="logbox">
+        <h2>Sign in</h2>
+
+        <form id="signInForm" onsubmit="event.preventDefault(); signin()">
+          <div class="inputs">
+            <div class="field">
+              <i class="fas fa-envelope"> </i>
+              <input
+                type="email"
+                name="email"
+                value=""
+                placeholder="email@example.com"
+                accept="off"
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                value=""
+              />
+            </div>
+
+            <button id="login" type="submit" name="login">Sign in</button>
+          </div>
+        </form>
+        <p class="sign-up-btn">
+          Don't have an account yet?
+          <a href="register.html">Sign up</a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <h2>copyright © TAMSYN STEED 2021</h2>
+    </footer>
+    <script src="/assets/scripts/signin.js"></script>
+  </body>
+</html>

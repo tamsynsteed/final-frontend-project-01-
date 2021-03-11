@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Koho", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+.sign-up-btn a:hover {
+  color: orangered;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+main {
+  position: relative;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 4em 0;
+  display: block;
+}
+
+.logbox {
+  padding: 1em 2em;
+  max-width: 25em;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+#log_head {
+  margin: 1.25em auto;
+  font-family: "Koho", sans-serif;
+  font-size: 0.8em;
+}
+
+.logbox a {
+  color: black;
+  font-weight: 1000;
+}
+
+.inputs {
+  padding: 0.75em;
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2em auto;
+
+  transition: all 200ms ease-out;
+}
+
+.fa-envelope::before {
+  content: "\f0e0";
+}
+
+.fa-lock::before {
+  content: "\f023";
+}
+
+.fa,
+.far,
+.fas {
+  font-weight: 900;
+  color: black;
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+}
+
+button {
+  font-size: 1em;
+  background: orangered;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+p {
+  font-size: medium;
+}
+
+.text1 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 p {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 1000;
+}
+
+.text1 h2 {
+  color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  opacity: 0.8;
+}

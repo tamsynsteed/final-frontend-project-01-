@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/listings.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Listings|MountainLux</title>
+  </head>
+  <body>
+    <header>
+      <h2>Mountain.Lux</h2>
+      <div id="name"></div>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link">
+          <h2><a href="/about.html">About Us</a></h2>
+        </li>
+        <li class="nav-link">
+          <h2><a href="uploadListing.html">Admin</a></h2>
+        </li>
+
+        <li class="nav-link">
+          <h2><a onclick="logout()">Sign out</a></h2>
+        </li>
+      </ul>
+    </header>
+
+    <landing class="landing" style="display: block; height: 45vh">
+      <div class="container">
+        <div class="image">
+          <img style="width: 80%; height: 45vh" />
+        </div>
+        <div class="text1">
+          <h2>mountain lux luxury villas</h2>
+          <p>
+            Choose from our wide selection of villas, in the lush mountains of
+            Cape Town.
+          </p>
+        </div>
+      </div>
+    </landing>
+
+    <main class="main" style="display: block; width: 80%">
+      <div class="card_box" id="hotel"></div>
+    </main>
+
+    <footer>
+      <h2>copyright © TAMSYN STEED 2021</h2>
+    </footer>
+
+    <script src="/assets/scripts/listings.js"></script>
+    <script src="/assets/scripts/signin.js"></script>
+  </body>
+</html>

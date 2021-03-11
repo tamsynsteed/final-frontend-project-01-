@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+body {
+  font-family: "Koho", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+header {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  max-width: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: white;
+  padding: 0.4em 3em;
+}
+
+h2 header {
+  color: white;
+}
+h2 {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.3s linear;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4a4d4a;
+  font-size: 0.6em;
+  padding: 0.4em;
+  color: aliceblue;
+}
+
+footer h2 {
+  color: #fff;
+  max-width: 100vw;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+p {
+  font-size: medium;
+}
+
+.container {
+  position: relative;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 4em 0;
+  display: block;
+  z-index: 2;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container > div {
+}
+
+.div1 {
+  min-height: 50vh;
+  padding-top: 50px;
+  max-width: 40em;
+
+  width: 40%;
+
+  background-color: whitesmoke;
+}
+
+.div2 {
+  padding: 60px;
+  min-height: 50vh;
+  max-width: 50em;
+
+  width: 60%;
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+}
+
+.inputs {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #2d2d2d;
+  width: 420px;
+  height: 40px;
+
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  padding-left: 10px;
+  bottom: 0;
+
+  display: flex;
+
+  align-items: center;
+  margin: 0 auto 2em auto;
+  max-width: 20em;
+
+  transition: all 200ms ease-out;
+}
+
+.fa,
+.far,
+.fas {
+  font-weight: 900;
+  color: black;
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa-lock::before {
+  content: "\f023";
+}
+
+button {
+  font-size: 1em;
+  background: orangered;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  border: none;
+  color: #fff;
+  opacity: 0.7;
+
+  margin-top: 6.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides > img {
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slideshow container */
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+  display: inline-block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hotel_name {
+  margin-top: -2em;
+  margin-bottom: 3.5em;
+}
+
+.fa-star {
+  color: orangered;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

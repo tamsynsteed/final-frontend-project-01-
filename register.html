@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/register.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <h2>Mountain.Lux</h2>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link">
+          <h2><a href="/about1.html">About Us</a></h2>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main" style="display: block">
+      <div class="logbox">
+        <h2>Register</h2>
+
+        <form
+          action=""
+          method="POST"
+          id="signUpForm"
+          onsubmit="event.preventDefault(); signup()"
+        >
+          <div class="inputs">
+            <div class="field">
+              <i class="fa fa-user"> </i>
+              <input
+                type="text"
+                name="fullname"
+                value=""
+                placeholder="Fullname"
+                accept="off"
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-phone"></i>
+              <input
+                type="text"
+                name="mobile_number"
+                placeholder="Mobile no."
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                value=""
+              />
+            </div>
+
+            <button id="register" type="submit" name="register">
+              Register
+            </button>
+          </div>
+        </form>
+        <p class="sign-up-btn">
+          Please sign in
+          <a href="index.html">Sign in</a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <h2>copyright © TAMSYN STEED 2021</h2>
+    </footer>
+
+    <script src="/assets/scripts/signup.js"></script>
+  </body>
+</html>

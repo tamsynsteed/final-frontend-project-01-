@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/uploadListing.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Mountain.Lux</h2>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link">
+            <li class="nav-link"><h2><a href="about.html">About us</a></h2></li>
+          <li class="nav-link"><h2><a href="listing.html">Resorts</a></h2></li>
+          <li class="nav-link"><h2><a onclick="logout()">Sign out</a></h2></li>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main" style="display: block">
+      <div class="logbox">
+        <h2>Upload Resort</h2>
+
+        <form
+          action="http://127.0.0.1:5000/add"
+          method="POST"
+          id="uploadForm"
+          onsubmit="event.preventDefault(); uploadListing()"
+        >
+          <div class="inputs">
+            <div class="field">
+              <i class="fas fa-hotel"> </i>
+              <input
+                type="text"
+                name="hotel_name"
+                value=""
+                placeholder="Resort"
+                accept="off"
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-audio-description"></i>
+              <input
+                type="text"
+                name="description"
+                placeholder="Add description"
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-image"></i>
+              <input
+                type="text"
+                name="image1"
+                placeholder="image url"
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-image"></i>
+              <input
+                type="text"
+                name="image2"
+                placeholder="image url"
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-image"></i>
+              <input
+                type="text"
+                name="image3"
+                placeholder="image url"
+                value=""
+              />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-money-bill-wave"></i>
+              <input type="text" name="price" placeholder="price" value="" />
+            </div>
+
+            <div class="field">
+              <i class="fas fa-star"></i>
+              <input
+                type="text"
+                name="stars"
+                placeholder="star rating"
+                value=""
+              />
+            </div>
+
+            <button id="register" type="submit" name="upload">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <div id="show-data"></div>
+    <a href="delete.html"><button>View/Delete Data</button></a>
+
+    <footer>
+      <h2>copyright © TAMSYN STEED 2021</h2>
+    </footer>
+
+    <script src="/assets/scripts/uploadListing.js"></script>
+    <script src="/assets/scripts/signin.js"></script>
+  </body>
+</html>
