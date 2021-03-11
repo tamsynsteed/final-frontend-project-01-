@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
 * {
   box-sizing: border-box;
+  overflow: scroll;
 }
 
 body {
@@ -54,7 +55,7 @@ main {
   margin: 0 auto;
   padding: 4em 0;
   display: block;
-  z-index: 2;
+  
 }
 
 .logbox {
